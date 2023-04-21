@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "llm-experiments"
+version = "0.1.0"
+description = "no description yet"
+authors = ["kolommik <mikhail.kolomasov@gmail.com>"]
+license = "None"
+readme = "README.md"
+packages = [{include = "llm_experiments"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+mypy = "^1.2.0"
+pylint = "^2.17.2"
+ipykernel = "^6.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
