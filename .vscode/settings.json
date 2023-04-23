@@ -10,4 +10,15 @@
         "--show-column-numbers",
         "--strict"
     ],
+
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "88"
+    ],
+    
+    "python.linting.flake8Args": [
+        "--max-line-length=88"
+    ],
+    
+    "editor.rulers": [88,120],
 }
