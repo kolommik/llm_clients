@@ -9,6 +9,12 @@ packages = [{include = "llm_experiments"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+python-dotenv = "^1.0.0"
+rich = "^13.3.4"
+requests = "^2.28.2"
+google-search-results = "^2.4.2"
+openai = "^0.27.4"
+tiktoken = "^0.3.3"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -16,6 +22,7 @@ black = "^23.3.0"
 mypy = "^1.2.0"
 pylint = "^2.17.2"
 ipykernel = "^6.22.0"
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
