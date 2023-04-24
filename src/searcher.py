@@ -140,7 +140,7 @@ def create_info_prompt(question: str, results: Dict[str, Any]) -> str:
     )
 
     # searched results
-    serch_info = (
+    search_info = (
         "\n\n".join([knowledge_graph_info])
         + "\n\n"
         + "\n\n".join(search_results_info)
@@ -160,8 +160,8 @@ def create_info_prompt(question: str, results: Dict[str, Any]) -> str:
         return ""
 
     info_prompt = (
-        "Use the following sources to answer the MAIN QUESTION:\n\n"
-        + serch_info
+        "Use the following sources to answer the MAIN QUESTION.\n\n"
+        + search_info
         + "\n\nMAIN QUESTION: "
         + question
         + "\n\nAnswer:"
