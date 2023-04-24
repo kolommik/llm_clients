@@ -145,22 +145,21 @@ def main() -> None:
         + "\n\nAnswer:"
     )
 
-    console.print(f"Prompt, [bold green]{info_prompt}[/bold green]!")
+    console.print(f"Prompt\n[bold green]{info_prompt}[/bold green]!")
     # ===============================
 
     # Answer from OpenAI
     usage, answer = get_answer_by_gpt_35_turbo(info_prompt)
 
-    console.print(f"Usage, [bold yellow]{usage}[/bold yellow]!")
-    print(type(usage))
     usage_text = Text(str(usage), style="bold blue")
     usage_panel = Panel(usage_text, box=box.SQUARE, expand=False)
     console.print(usage_panel)
 
-    console.print(f"Answer, [bold blue]{answer}[/bold blue]!")
+    console.print(f"[bold blue]Answer: {answer}[/bold blue]!")
 
     # ===============================
-    input("Press any key to end...")
+    print("Done")
+    os.system("pause")
 
 
 if __name__ == "__main__":
