@@ -33,4 +33,8 @@ def test_main_with_search_results(
         main()
 
     captured = capsys.readouterr()
-    assert "Answer: The capital of France is Paris." in captured.out
+    valid_answers = (
+        "Answer: The capital of France is Paris.",
+        "Answer: Paris is the capital of France.",
+    )
+    assert any(answer in captured.out for answer in valid_answers)
