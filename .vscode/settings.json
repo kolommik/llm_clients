@@ -11,6 +11,8 @@
         "--strict"
     ],
 
+    "python.envFile": "${workspaceFolder}/src/.env",
+
     "python.formatting.blackArgs": [
         "--line-length",
         "88"
