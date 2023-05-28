@@ -7,6 +7,8 @@ This project is a collection of command-line clients for searching and retrievin
 - Query Google's search engine for answers to questions
 - Use OpenAI's GPT-3.5-turbo to generate answers based on the information found in search results
 - Interactive command-line interface for user input
+- Integrated with Bing's Chat, also known as Sydney, using the SydneyClient (https://github.com/vsakkas/sydney.py)
+- Provides the ability to run chat sessions in Russian language using Google's Bard chat (https://github.com/dsdanielpark/Bard-API)
 
 ## Installation
 
