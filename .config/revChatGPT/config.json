@@ -1,0 +1,8 @@
+{
+  "conversation_id": "UUID...",
+  "parent_id": "UUID...",
+//   "proxy": "...",
+  "model": "gpt-4",
+//   "plugin_ids": ["plugin-d1d6eb04-3375-40aa-940a-c2fc57ce0f51"], // Wolfram Alpha example
+  "disable_history": true
+}
